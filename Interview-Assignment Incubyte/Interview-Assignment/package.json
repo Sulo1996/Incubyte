@@ -1,0 +1,23 @@
+{
+  "name": "Interview-Demo",
+  "version": "1.0.0",
+  "description": "Sulochana test portal",
+  "main": "cypress.config.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "npx:run": "npx cypress run --spec='cypress/e2e/**/*.feature'"
+  },
+  "keywords": [],
+  "author": "Sulochana",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.1.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^13.13.2",
+    "typescript": "^5.5.4"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/step_definitions/",
+    "nonGlobalStepDefinitions": false
+  }
+}
